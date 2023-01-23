@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="Alejandra">
+  <title>Etiquetas HTML</title>
+</head>
+<body>
+  <!-- Etiquetas de Estructura de HTML -->
+  <header>
+    <!-- Header: Cabecera -->
+    <nav>
+      <!-- Navegación: Menu de navegación -->
+      <div>
+        <a href="">Logo</a>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <a href="">Inicio</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <hr>
+  <!-- hr : Divide secciones mediante una línea  -->
+  <br>
+  <br>
+  <!-- br: Otorga un salto de línea  -->
+
+  <main>
+    <!-- Importante: Main contiene todo el contenido importante de la página -->
+    <h1>Aprendiendo HTML</h1>
+    <section>
+      <!-- Sección: Contiene elementos que se repiten-->
+      <h2>Primer contenido</h2>
+      <article>
+          <!-- Article: Contiene elementos dentro de seccion  -->
+        <h3>Soy el subtítulo de primer contenido</h3>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, velit dolorum est omnis et obcaecati amet officia delectus similique, tempore soluta libero earum. Magni amet ipsum doloremque ut voluptatem unde.
+        </p>
+      </article>
+      <article>
+        <h3>Soy el segundo subtítulo del primer contenido</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum unde animi a molestiae quisquam, quaerat sit, sint, eaque porro vitae dolore ipsa pariatur totam corrupti ut adipisci quas. Asperiores, officia.</p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Cabeceras y titulares</h2>
+
+      <!-- <h1>H1 - heading</h1> -->
+      <!-- Importante: Es el encabezado principal y unicamente se utiliza una vez  -->
+      <h2>H2 - heading</h2>
+      <!-- h2: suele utilizarse en subtitulos  -->
+      <h3>H3 - heading</h3>
+      <!-- h3: suele utilizarse para títulos de subtemas  -->
+      <h4>H4 - heading</h4>
+      <h5>H5 - heading</h5>
+      <h6>H6 - heading</h6>
+      <!-- Importante: h4,h5,h6 no se recomienda utilizarlos, ya que le dictan al SEO que se trata de contenido muy profundo en el documento y afecta al SEO  -->     
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Párrafos</h2>
+      <p>
+        <!-- Parrafo: Contiene una frase o una oración. -->
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae, minus illum. Dolor, nemo delectus fugiat recusandae quidem libero esse mollitia saepe culpa praesentium iusto soluta voluptatum quibusdam aspernatur nisi nam.
+      </p>
+      <article>
+        <h3>Cursiva, nregrita y subrayado</h3>
+        <p>Lorem ipsum <u>dolor</u> sit amet <i>consectetur</i> consectetur adipisicing elit. Error, a eius quas <b>dignissimos</b> temporibus consectetur amet minus commodi quae qui tenetur nostrum eveniet ea sit ullam ipsam mollitia perferendis ratione.</p>
+      </article>
+      <article>
+        <h3>Énfasis e importancia</h3>
+        <p>Lorem ipsum dolor sit amet <strong>importante</strong> consectetur adipisicing elit. Quo doloribus <em>emphasis</em> sapiente veniam illum fugit, magni harum eaque. Labore <mark>marcador</mark> exercitationem et alias maiores? Quae praesentium ratione ab odit, deleniti quam fuga?</p>
+      </article>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Caracteres especiales</h2>
+      <ul>
+        <li>&nbsp; &nbsp; &nbsp; Espacio</li>
+        <li>&#60; Menor que </li>
+        <li>&#62; Mayor que </li>
+        <li>&#169; Copyright</li>
+        <li>&#174; Marca registrada</li>
+        <li>&#8482; Trade Mark</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Listas</h2>
+      <article>
+        <h3>Listas desordenadas</h3>
+
+        <ul type="square">
+          <li>Lista 1</li>
+          <li>Lista 1</li>
+          <li>Lista 1</li>
+          <li>Lista 1</li>
+          <li>Lista 1</li>
+          <li>Lista 2</li>
+          <li>Lista 3</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Listas Ordenadas</h3>
+
+        <ol start="10" reversed>
+          <li>Lista 1</li>
+          <li>Lista 2</li>
+          <li>Lista 3</li>
+          <li>Lista 4</li>
+          <li>Lista 5</li>
+        </ol>
+      </article>
+      <article>
+        <h3>Listas de Definición</h3>
+        <dl>
+          <dt>Ejemplo 1</dt>
+          <dd>Descripción del Elemento 1</dd>
+          <dt>Ejemplo 2</dt>
+          <dd>Descripción del Elemento 2</dd>
+          <dt>Ejemplo 3</dt>
+          <dd>Descripción del Elemento 3</dd>
+        </dl>
+      </article>
+    </section>
+    
+    <hr>
+
+    <section>
+      <h2>Enlaces</h2>
+
+      <a href="https://htmlreference.io/" target="_blank" title="Este enlace va a html reference">Enlace a una web</a>
+      <br>
+      <a href="https://htmlreference.io/element/a/" target="_blank" rel="noreferrer nofollow">Enlace a un directorio</a>
+
+      <article>
+        <h3>Enlaces a otro documento HTML</h3>
+        <a href="documento.html">Enlace a un documento</a>
+        <br>
+        <a href="documento.html#resumen">Enlace a una sección del documento</a>
+      </article>
+
+      <article>
+        <h3>Enlace a un archivo</h3>
+        <a href="imagen.png">Enlace a una imagen</a>
+        <br>
+        <a href="video.mp3">Enlace a un video</a>
+      </article>
+
+      <article>
+        <h3>Enlaces con imágenes</h3>
+        <a href="https://blog.ida.cl/wp-content/uploads/sites/5/2020/04/tamano-redes-blog-655x470.png" target="_blank" rel="noreferrer nofollow"><img src="https://blog.ida.cl/wp-content/uploads/sites/5/2020/04/tamano-redes-blog-655x470.png" alt="imagen" width="100" height="100"></a>
+      </article>
+
+      <article>
+        <h3>Protocolos en la URL del enlace</h3>
+
+        <!-- El protocolo mailto es un protocolo de correo electrónico. -->
+        <a href="mailto:usuario@dominio.com?subject=Tema%20del%20mensaje">Enviar email a usuario@dominio.com</a>
+        <br>
+         <!-- Whatsapp link protocol -->
+         <a href="https://wa.me/0000000000000?text=tu%20Mensaje%20De%20Texto" target="_blank">Enviar Whatsapp</a>
+        <br>
+         <!-- Tel link protocol -->
+         <a href="tel:+1234567890">Llámame</a>
+         <!-- Importante: %20 brinda un espacio en los mensajes predefinidos de los protocolos -->
+      </article>
+
+      <article>
+        <h3>El elemento link</h3>
+        <!-- <link rel="relacion" href="destino" rev="relacion-inversa"> -->
+        <!-- Importante: link nunca va en body  -->
+      </article>
+    </section>
+    <hr>
+
+    <section>
+      <h2>Tablas</h2>
+
+      <article>
+        <h3>Básicas</h3>
+        <table 
+          border
+          align="center"
+          cellpadding="10"
+          cellspacing="15"
+          bgcolor="#808080" 
+        >
+        <!-- elemento que representa las tablas -->
+          <tr>
+            <!-- elemento que representa una fila de la tabla -->
+            <td>Fila 1 Columna 1 Celda 1</td>
+            <!-- elemento que representa una celda de la tabla -->
+            <td>Fila 1 Columna 2 Celda 2</td>
+            <td>Fila 1 Columna 3 Celda 3</td>
+          </tr>
+          <tr>
+            <td>Fila 2 Columna 1 Celda 1</td>
+            <td>Fila 2 Columna 2 Celda 2</td>
+            <td>Fila 2 Columna 3 Celda 3</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <h3>Agregando título y Cabecera</h3>
+        <table border>
+          <caption>
+            Mi tabla
+          </caption>
+          <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+          </tr>
+          <tr>
+            <td>Fila 1 Columna 1 Celda 1</td>
+            <td>Fila 1 Columna 2 Celda 2</td>
+            <td>Fila 1 Columna 3 Celda 3</td>
+          </tr>
+          <tr>
+            <td>Fila 2 Columna 1 Celda 1</td>
+            <td>Fila 2 Columna 2 Celda 2</td>
+            <td>Fila 2 Columna 3 Celda 3</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <h3>Agrupando Celdas</h3>
+        <table border>
+          <tr>
+            <td colspan="5" align="center">Mis Gastos</td>
+          </tr>
+          <tr>
+            <td colspan="2">Mayo</td>
+            <td colspan="2">Junio</td>
+            <td>Total</td>
+          </tr>
+          <tr>
+            <td>Ingresos</td>
+            <td>Gastos</td>
+            <td>Ingresos</td>
+            <td>Gastos</td>
+            <td rowspan="2">950usd</td>
+          </tr>
+          <tr>
+            <td>250usd</td>
+            <td>100usd</td>
+            <td>400usd</td>
+            <td>200usd</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <h3>Grupos de Filas</h3>
+        <table border>
+          <thead>
+            <tr>
+              <td>Mes</td>
+              <td>Enero</td>
+              <td>Febrero</td>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <td>Gas</td>
+              <td>5</td>
+              <td>10</td>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>Total</td>
+              <td>15</td>
+              <td>15</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Contenido Embebido</h2>
+      <article>
+        <h3>Imágenes</h3>
+        <figure>
+          <img src="bg.png" alt="Imagen del logo HTML con un chico y su laptop" width="500" loading="lazy">
+          <figcaption>Mi imagen background en la misma carpeta</figcaption>
+        </figure>
+
+        <figure>
+          <img src="assets/img/bg.png" alt="Imagen del logo HTML con un chico y su laptop" width="500" >
+          <figcaption>Mi imagen background en otro directorio</figcaption>
+        </figure>
+      </article>
+      <article>
+        <h3>Videos</h3>
+        <!-- <video src="assets/video/video.mp4" width="500" controls poster="assets/img/cover.jpg" autoplay muted loop></video> -->
+        <video controls width="500">
+          <source src="assets/video/video.mp4" type="video/mp4">
+          <source src="assets/video/video.webm" type="video/webm">
+          <p>Su navegador no soporta videos HTML5</p>
+        </video>
+      </article>
+      <article>
+        <h3>Audios</h3>
+        <!-- <audio src="assets/audio/audio.mp3" controls autoplay loop ></audio> -->
+        <audio  controls>
+          <source src="assets/audio/audio.mp3" type="audio/mp3">
+          <source src="assets/audio/audio.ogg" type="audio/ogg">
+          <p>Tu navegador no soporta el tag audio</p>
+        </audio>
+      </article>
+
+      <article>
+        <h3>Iframe</h3>
+        <iframe src="https://htmlreference.io/" style="border: 0" width="500" height="400">
+        </iframe>
+        <iframe src="documento.html" width="500" height="400"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d372860.79620425194!2d-98.37486594999999!3d43.1050409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8785b6c86f922aeb%3A0x77d66f2202568ca!2sYankton%20Reservation%2C%20Armour%2C%20Dakota%20del%20Sur!5e0!3m2!1ses!2sus!4v1674177348513!5m2!1ses!2sus" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iTR98zgivNw" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </article>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Algunas Nuevas Etiquetas HTML5</h2>
+
+      <article>
+        <h3>Etiqueta Dialog</h3>
+        <dialog id="modal">
+          Soy una ventana modal
+          <button id="btn_close">Close Modal</button>
+        </dialog>
+        <button id="btn_open">Open Modal</button>
+
+        <script >
+          btn_open.onclick = function () {
+            modal.open = true
+          }
+          btn_close.onclick = function () {
+            modal.open = false
+          }
+        </script>
+      </article>
+
+      <article>
+        <details>
+          <summary>Read more</summary>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nam voluptas officiis esse nesciunt amet et voluptatem voluptates molestiae cupiditate laudantium odio, expedita veniam ad quisquam deleniti dolores alias excepturi.</p>
+          <img src="bg.png" alt="" width="500">
+        </details>
+        <details open>
+          <summary>Read more</summary>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque nam voluptas officiis esse nesciunt amet et voluptatem voluptates molestiae cupiditate laudantium odio, expedita veniam ad quisquam deleniti dolores alias excepturi.</p>
+          <img src="bg.png" alt="" width="500">
+        </details>
+      </article>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>Formularios</h2>
+      <form action="https://httpbin.org/get" method="get" name="primer_formulario" target="_blank" autocomplete="on">
+      <fieldset>
+        <legend>Formulario de Contacto</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required tabindex="4">
+        <br>
+        <label for="email">Correo:</label>
+        <input id="email" type="email" name="correo" placeholder="correo@correo.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" tabindex="3">
+        <br>
+        <label for="tel">Teléfono:</label>
+        <input type="tel" name="telefono" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" tabindex="1">
+        <br>
+        <label for="country">Pais:</label>
+        <input type="text" id="country" name="pais" placeholder="Selecciona o escribe tu pais" tabindex="2" list="latam">
+        <datalist id="latam">
+          <option value="México"></option>
+              <option value="Costa Rica"></option>
+              <option value="Salvador"></option>
+              <option value="Honduras"></option>
+              <option value="Cuba"></option>
+              <option value="Puerto Rico"></option>
+              <option value="Guatemala"></option>
+              <option value="Nicaragua"></option>
+              <option value="Panamá"></option>
+              <option value="Venezuela"></option>
+              <option value="Colombia"></option>
+              <option value="Ecuador"></option>
+              <option value="Perú"></option>
+              <option value="Bolivia"></option>
+              <option value="Paraguay"></option>
+              <option value="Uruguay"></option>
+              <option value="Chile"></option>
+              <option value="Argentina"></option>
+              <option value="Brasil"></option>
+        </datalist>
+      </fieldset>
+
+      <br>
+
+      <fieldset>
+        <legend>¿Necesitas Asesorias?</legend>
+        <label for="yes">Sí</label>
+        <input type="radio" name="asesoria" id="yes">
+        <label for="no">No</label>
+        <input type="radio" name="asesoria" id="no">
+        <label for="talvez">Tal vez</label>
+        <input type="radio" name="asesoria" id="talvez">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>¿De qué tema quieres hablar?</legend>
+        <label for="select">Selecciona el tema</label>
+        <select name="tema" id="select">
+          <option value="">Temas</option>
+          <!-- multiple: Atributo para seleccionar más de una opción  -->
+          <optgroup+ label="Desarrollo Web">
+            <option value="full">Fullstack</option>
+            <!-- selected: atributo para definir qué valor ira por default en el input  -->
+            <option value="front">Frontend</option>
+            <option value="back">Backend</option>
+          </optgroup+>
+          <optgroup label="Desarrollo Móvil">
+            <option value="android">Apps para Android</option>
+            <option value="ios">Apps para iOS</option>
+          </optgroup>
+        </select>
+        <br>
+        <label for="html">HTML5</label>
+        <input type="checkbox" name="html" id="html">
+        <label for="css">CSS</label>
+        <input type="checkbox" name="css" id="css">
+        <label for="js">JavaScript</label>
+        <input type="checkbox" name="js" id="js">
+      </fieldset>
+      <br>
+      <fieldset>
+        <legend>Manda mensaje</legend>
+        <label for="message">Cuéntame Más</label>
+        <textarea name="message" id="message" cols="50" rows="10" placeholder="Escríbeme un mensaje"></textarea>
+         <!-- En caso de querer desabilitar el control de textarea para que no sea modificado, utilizaremos CSS de esta manera textarea {
+          resize: none;
+        } -->
+        
+        <label for="file">Cargar Archivo</label>
+        <input type="file" id="file" name="file" multiple>
+      </fieldset>
+      <fieldset>
+        <label for="pass">Contraseña:</label>
+        <input type="password" name="pass" id="pass">
+      </fieldset>
+      <br>
+      
+      <br>
+      <label for="range">Rango</label>
+      <input type="range">
+      <br>
+      <label for="time">Hora</label>
+      <input type="time">
+      <br>
+      <label for="number">number</label>
+      <input type="number" min="5" max="15">
+      <br>
+      <label for="url">URL</label>
+      <input type="url">
+      <br>
+      <label for="colot">Color</label>
+      <input type="color" name="" id="">
+      <br>
+      <input type="submit" value="Send" tabindex="5">
+      <!-- <button type="reset">Clear</button> -->
+      <input type="reset" value="Clear">
+
+      </form>
+    </section>
+
+    <aside>
+      <!-- Aside: Contiene elementos que no son necesarios en la mayoría de las páginas -->
+      <h3>Recursos</h3>
+      <ul>
+        <li>
+          <a href="https://htmlreference.io/" target="_blank">htmlreference.io</a>
+        </li>
+        <li>
+          <a href="https://www.iloveimg.com/es" target="_blank">Iloveimg</a>
+        </li>
+        <li>
+          <a href="https://www.pexels.com/" target="_blank">Pexels</a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/html/" target="_blank">W3Schools</a>
+        </li>
+      </ul>
+    </aside>
+  </main>
+
+  <hr>
+
+  <footer>
+    <h2>Pie de página</h2>
+    <p>Este es el pie de página</p>
+    <nav>Se puede colocar también un nav</nav>
+  </footer>
+</body>
+</html>

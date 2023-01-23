@@ -1,0 +1,151 @@
+// Declara una función que reciba como parámetro nombre y edad y que imprima en consola: "Hola, mi nombre es [nombre] y tengo [edad] años".
+function hey(name, age){
+    return `Hola, mi nombre es ${name} y tengo ${age} años`
+}
+console.log(hey('Denis', 27))
+
+//1 - Declara una variable global llamada saludo y colócale como valor "Hola los saludo desde:"
+//2 - Declara una función sin parámetros, dentro crea una variable local llamada pais y colócala como valor el país de donde vienes.
+//3 - Tu función debe mostrar por consola: "Hola los saludo desde [pais]".
+
+let saludo = "Hola los saludo desde:"
+function sayHey(){
+    let country = 'Peru'
+    return `${saludo} ${country}`
+}
+
+console.log(sayHey())
+
+// Declara una función que reciba como parámetro numero y numero2 y que retorne el resultado de la suma de ambos.
+
+function suma (n1, n2){
+    return n1 + n2
+}
+console.log(suma(2, 4))
+
+// Con el valor retornado de la función anterior realiza una función que reciba como parámetro ese resultado y que retorne el doble del resultado.
+
+function doble(num){
+    return num*2
+}
+
+console.log(doble(suma(2,4)))
+
+// Crea una función que retorne un mensaje de bienvenida, recibiendo como parámetro el nombre de la persona, pero si no se recibe ningún parámetro debe retornar "Bienvenido Anónimo".
+
+function welcome(name = 'Anónimo'){
+    return `Bienvenido ${name}`
+}
+
+console.log(welcome('Denis'))
+
+// Completa la función para que agregue más elementos al final del array
+const array = ["a", "b", "c"];
+
+function addElem(arr, n){
+    arr[arr.length] = n
+    return array
+}
+
+console.log(addElem(array, 'd'))
+
+// Define una función que compruebe si existe una propiedad en un objeto, si es así, debe retornar true y si no, false
+//Define una función que reciba como parámetro un objeto con las propiedades nombre, edad y país y un string con el nombre de la propiedad país. La función deberá retornar el valor de la propiedad país.
+
+let obj = {
+    nombre: 'Denis',
+    edad: 27,
+    pais: 'Peru'
+}
+
+function search(object, prop){
+    return prop in object
+}
+console.log(search(obj, 'pais'))
+
+//Define una función que reciba como parámetro un arreglo de 3 números, deberás retornar la suma de todos los númros
+let numbs = [1, 2, 3]
+    function sumNumbs(){
+    return numbs[0] + numbs[1] + numbs[2]        
+    }
+console.log(sumNumbs())
+
+// Resuelve el siguiente problema utilizando funciones:
+// Tenemos un arreglo de usuarios, cada usuario tiene varios atributos; nombre, dad, país, etc. Queremos obtener un arreglo con los nombres de todos los usuarios.
+const usuarios = [
+    {
+      nombre: "Erik",
+      edad: 29,
+      correo: "erik@academlo.com",
+      social: [
+        { nombre: "facebook", url: "facebook/erik" },
+        { nombre: "twitter", url: "twitter/erik" },
+      ],
+      genero: "Hombre",
+    },
+    {
+      nombre: "Georg",
+      edad: 33,
+      correo: "georg@academlo.com",
+      social: [
+        { nombre: "facebook", url: "facebook/georg" },
+        { nombre: "twitter", url: "twitter/georg" },
+      ],
+      genero: "Hombre",
+    },
+    {
+      nombre: "Andrea",
+      edad: 42,
+      correo: "andrea@hotmail.com",
+      social: [
+        { nombre: "facebook", url: "facebook/andrea" },
+        { nombre: "twitter", url: "twitter/andrea" },
+      ],
+      genero: "Mujer",
+    },
+    {
+      nombre: "Oscar",
+      edad: 31,
+      correo: "oscar@academlo.com",
+      social: [
+        { nombre: "facebook", url: "facebook/oscar" },
+        { nombre: "twitter", url: "twiter/oscar" },
+      ],
+      genero: "Hombre",
+    },
+    {
+      nombre: "Daniela",
+      edad: 22,
+      correo: "andrea@uaq.mx",
+      social: [
+        { nombre: "facebook", url: "facebook/andrea" },
+        { nombre: "twitter", url: "twitter/andrea" },
+      ],
+      genero: "Mujer",
+    },
+  ];
+
+  function getUser(user){
+    return [
+        user[0].nombre,
+        user[1].nombre,
+        user[2].nombre,
+        user[3].nombre,
+        user[4].nombre
+    ]
+  }
+
+  console.log(getUser(usuarios))
+
+//Tenemos un arreglo de usuarios, cada usuario tiene varios atributos; nombre, dad, país, etc. Queremos obtener un arreglo con las url de facebook de todos los usuarios (UTILIZA EL ARREGLO ANTERIOR)
+function getUrl(user){
+    return [
+        user[0].social[0].url,
+        user[1].social[0].url,
+        user[2].social[0].url,
+        user[3].social[0].url,
+        user[4].social[0].url
+    ]
+}
+
+console.log(getUrl(usuarios))
